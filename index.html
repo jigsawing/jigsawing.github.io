@@ -77,7 +77,15 @@
     .section {
       margin-top: 3em;
     }
-
+    
+    .rainbow-text {
+      font-size: 1.4em;
+      font-weight: bold;
+      background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
     a {
       color: #2e8b57;
     }
@@ -109,7 +117,7 @@
     <section id="about">
       <h1>Jiaying <span class="highlight">Hu</span></h1>
       <p>Email: <a href="mailto:your@email.com">hjyahaha@gmail.com</a></p>
-      <p>Hello! I’m Jiaying, always jigsawing thoughts, models, and meaning. </p>
+      <p class="rainbow-text">Hello! I’m Jiaying, always jigsawing thoughts, models, and meaning.</p>
       <p>I obtained ....... </p>
       <p>I am interested in multi-modal learning, cognition modeling, and scientific applications of deep learning. ......... </p>
     </section>
