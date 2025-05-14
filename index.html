@@ -1,76 +1,101 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Jigsawing — Jiaying Hu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
   <style>
     body {
-      font-family: "Georgia", serif;
-      background-color: #f5f7f8;
-      color: #1a1a1a;
-      max-width: 720px;
-      margin: 4% auto;
-      padding: 0 1em;
-      line-height: 1.6;
+      margin: 0;
+      font-family: 'Muli', sans-serif;
+      color: #333;
+      display: flex;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #772953;
+      color: white;
+      min-height: 100vh;
+      padding: 2em 1em;
+      position: fixed;
+    }
+    .sidebar img {
+      width: 120px;
+      border-radius: 50%;
+      margin: 0 auto 1em;
+      display: block;
+    }
+    .sidebar nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin: 1em 0;
+      font-weight: bold;
+    }
+    .main {
+      margin-left: 220px;
+      padding: 2em;
+      max-width: 800px;
     }
     h1 {
-      font-size: 2.8em;
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .highlight {
+      color: #772953;
       font-weight: bold;
-      color: #0d1117;
-      margin-bottom: 0.2em;
-    }
-    h2 {
-      font-size: 1.4em;
-      color: #555;
-      font-weight: normal;
-    }
-    h3 {
-      font-size: 1.1em;
-      font-weight: bold;
-      margin-top: 2em;
-      color: #222;
-    }
-    a {
-      color: #005577;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
     .section {
-      margin-top: 2em;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 0.5em 0;
+      margin-top: 3em;
     }
   </style>
 </head>
 <body>
 
-  <h1>Jigsawing</h1>
-  <h2>Jiaying Hu</h2>
-
-  <p>I am a researcher exploring cognition, multi-modal learning, and the fragmented nature of data and meaning. I think through puzzles, both literal and conceptual.</p>
-
-  <div class="section">
-    <h3>Contact</h3>
-    <ul>
-      <li>Email: <a href="mailto:duyh@stu.zuel.edu.cn">duyh@stu.zuel.edu.cn</a></li>
-      <li>GitHub: <a href="https://github.com/yourgithub">github.com/yourgithub</a></li>
-      <li>Scholar: <a href="https://scholar.google.com/citations?user=xxx">Google Scholar</a></li>
-    </ul>
+  <div class="sidebar">
+    <img src="avatar.jpg" alt="Profile photo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#publications">Publications</a>
+      <a href="#services">Services</a>
+      <a href="#awards">Awards</a>
+      <a href="#teaching">Teaching</a>
+    </nav>
   </div>
 
-  <div class="section">
-    <h3>Now</h3>
-    <p>Working on multi-modal learning for biomedical prediction. Reading Borges. Listening to Radiohead. Still jigsawing.</p>
+  <div class="main">
+    <section id="about">
+      <h1>Jiaying <span class="highlight">Hu</span></h1>
+      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+      <p>Hello! I’m Jiaying, a researcher interested in multi-modal learning, cognition modeling, and scientific applications of deep learning.</p>
+    </section>
+
+    <section id="publications" class="section">
+      <h2>Publications</h2>
+      <p>[You can list publications here]</p>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Professional Services</h2>
+      <p>[List of conferences, reviews, etc]</p>
+    </section>
+
+    <section id="awards" class="section">
+      <h2>Awards</h2>
+      <ul>
+        <li>XX Fellowship, 2024</li>
+        <li>Best Paper Award, XYZ Conference</li>
+      </ul>
+    </section>
+
+    <section id="teaching" class="section">
+      <h2>Teaching</h2>
+      <p>[Courses or mentoring experience]</p>
+    </section>
   </div>
 
 </body>
